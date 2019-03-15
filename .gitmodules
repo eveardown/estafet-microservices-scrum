@@ -1,0 +1,48 @@
+[submodule "estafet-microservices-scrum-commons-lib"]
+	path = estafet-microservices-scrum-commons-lib
+	url = git@github.com:eveardown/estafet-microservices-scrum-commons-lib.git
+[submodule "estafet-microservices-scrum-data-lib"]
+	path = estafet-microservices-scrum-data-lib
+	url = git@github.com:eveardown/estafet-microservices-scrum-data-lib.git
+[submodule "estafet-microservices-scrum-lib"]
+	path = estafet-microservices-scrum-lib
+	url = git@github.com:eveardown/estafet-microservices-scrum-lib.git
+[submodule "estafet-microservices-scrum-pages-lib"]
+	path = estafet-microservices-scrum-pages-lib
+	url = git@github.com:eveardown/estafet-microservices-scrum-pages-lib.git
+[submodule "estafet-microservices-scrum-parent"]
+	path = estafet-microservices-scrum-parent
+	url = git@github.com:eveardown/estafet-microservices-scrum-parent.git
+[submodule "estafet-microservices-scrum-api-discovery"]
+	path = estafet-microservices-scrum-api-discovery
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-discovery.git
+[submodule "estafet-microservices-scrum-api-gateway"]
+	path = estafet-microservices-scrum-api-gateway
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-gateway.git
+[submodule "estafet-microservices-scrum-api-project"]
+	path = estafet-microservices-scrum-api-project
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-project.git
+[submodule "estafet-microservices-scrum-api-project-burndown"]
+	path = estafet-microservices-scrum-api-project-burndown
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-project-burndown.git
+[submodule "estafet-microservices-scrum-api-sprint"]
+	path = estafet-microservices-scrum-api-sprint
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-sprint.git
+[submodule "estafet-microservices-scrum-api-sprint-board"]
+	path = estafet-microservices-scrum-api-sprint-board
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-sprint-board.git
+[submodule "estafet-microservices-scrum-api-sprint-burndown"]
+	path = estafet-microservices-scrum-api-sprint-burndown
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-sprint-burndown.git
+[submodule "estafet-microservices-scrum-api-story"]
+	path = estafet-microservices-scrum-api-story
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-story.git
+[submodule "estafet-microservices-scrum-api-task"]
+	path = estafet-microservices-scrum-api-task
+	url = git@github.com:eveardown/estafet-microservices-scrum-api-task.git
+[submodule "estafet-microservices-scrum-basic-ui"]
+	path = estafet-microservices-scrum-basic-ui
+	url = git@github.com:eveardown/estafet-microservices-scrum-basic-ui.git
+[submodule "estafet-microservices-scrum-qa"]
+	path = estafet-microservices-scrum-qa
+	url = git@github.com:eveardown/estafet-microservices-scrum-qa.git
