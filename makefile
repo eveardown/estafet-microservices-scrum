@@ -13,6 +13,7 @@ openshift:
 	ssh -A ec2-user@$$(terraform output bastion-public_ip) "ssh-keyscan -t rsa -H node2.openshift.local >> ~/.ssh/known_hosts"
 
 	# Copy our inventory to the master and run the install script.
+	scp ./rds-inventory.cfg ec2-user@$$(terraform output bastion-public_ip):~
 	scp ./inventory.cfg ec2-user@$$(terraform output bastion-public_ip):~
 	cat install-from-bastion.sh | ssh -o StrictHostKeyChecking=no -A ec2-user@$$(terraform output bastion-public_ip)
 
@@ -29,8 +30,8 @@ destroy:
 	terraform init && terraform destroy -auto-approve
 
 # Open the console.
-browse-openshift:
-	open $$(terraform output master-url)
+master-url:
+	echo $$(terraform output master-url)
 
 # SSH onto the master.
 ssh-bastion:
@@ -41,10 +42,3 @@ ssh-node1:
 	ssh -t -A ec2-user@$$(terraform output bastion-public_ip) ssh node1.openshift.local
 ssh-node2:
 	ssh -t -A ec2-user@$$(terraform output bastion-public_ip) ssh node2.openshift.local
-
-# Create sample services.
-deploy:
-	oc login $$(terraform output master-url) --insecure-skip-tls-verify=true -u=admin -p=123
-	oc new-project sample
-	oc process -f ./sample/counter-service.yml | oc create -f -
-
