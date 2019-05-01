@@ -2,3 +2,5 @@
 /prod-pipeline.groovy.bak
 /setup-pipeline.groovy.bak
 /inventory
+/.settings/
+/.project
